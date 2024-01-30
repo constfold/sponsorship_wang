@@ -1,0 +1,12 @@
+diff --git a/yt_dlp/extractor/youtube.py b/yt_dlp/extractor/youtube.py
+index 88126d11f..f8d4205c5 100644
+--- a/yt_dlp/extractor/youtube.py
++++ b/yt_dlp/extractor/youtube.py
+@@ -3317,6 +3317,7 @@ def _extract_comment(self, comment_renderer, parent=None):
+             'author': self._get_text(comment_renderer, 'authorText'),
+             'author_thumbnail': traverse_obj(comment_renderer, ('authorThumbnail', 'thumbnails', -1, 'url', {url_or_none})),
+             'parent': parent or 'root',
++            'chip': self._get_text(comment_renderer, ('paidCommentChipRenderer', 'pdgCommentChipRenderer', 'chipText')),
+         }
+ 
+         # Timestamp is an estimate calculated from the current time and time_text
