@@ -15,7 +15,7 @@ As you can see, most of the donated money is using USD.
 
 In average, the people who uses USD to donate is more generous than the others.
 The figure below shows the mean value of each currency. The currency with less
-than the average value is colored in red, and the unit is CNY.
+than the average value is colored in green, and the unit is CNY.
 
 ![fig3](fig3.png)
 
